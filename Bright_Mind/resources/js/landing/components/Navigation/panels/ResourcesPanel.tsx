@@ -1,0 +1,36 @@
+import { ArrowRight } from 'lucide-react';
+import { resourceGroups } from '../navigation.data';
+export function ResourcesPanel() {
+    return (
+        <div className="grid grid-cols-4 divide-x divide-neutral-200">
+            {resourceGroups.map((g) => (
+                <section key={g.title} className="p-6">
+                    <p className="mb-3 text-sm font-medium text-[var(--menu-accent)]">
+                        {g.title}
+                    </p>
+                    <div className="space-y-1">
+                        {g.items.map((i) => {
+                            const Icon = i.icon;
+                            return (
+                                <a
+                                    key={i.id}
+                                    href={i.href}
+                                    className="group block rounded-xl p-3 transition hover:bg-neutral-50"
+                                >
+                                    <span className="flex items-center gap-2 font-medium">
+                                        <Icon className="h-4 w-4 text-[var(--menu-accent)]" />
+                                        {i.title}
+                                    </span>
+                                    <span className="mt-1 block text-sm text-neutral-500">
+                                        {i.description}
+                                    </span>
+                                    <ArrowRight className="mt-2 h-4 w-4 opacity-0 transition group-hover:translate-x-0.5 group-hover:opacity-100" />
+                                </a>
+                            );
+                        })}
+                    </div>
+                </section>
+            ))}
+        </div>
+    );
+}
