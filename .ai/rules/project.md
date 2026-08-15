@@ -23,4 +23,4 @@ Treat partner administration/CMS and multilingual authoring as first-class archi
 Before Bright Mind domain migrations, resolve P0 identity/RBAC, localization, course/block, activity, and editorial workflow decisions together. Prefer reusable course/activity/content contracts over course-specific implementations.
 
 ## Persistent project context
-Update `CURRENT_STATE.md` after meaningful implementation changes and `DECISIONS.md` after durable decisions.
+Update `.agents/skills/bright-mind-project-context/references/current-state.md` after meaningful implementation changes and its `decisions.md` reference after durable decisions.

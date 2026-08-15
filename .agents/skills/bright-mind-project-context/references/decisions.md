@@ -32,8 +32,6 @@ This file records durable architecture/product decisions and high-value open dec
 | P2 | Search infrastructure once content volume/use cases are known. |
 | P2 | Realtime/live-learning architecture once workflows are defined. |
 | Future | Europass/European Digital Credentials integration. |
-# Decisions
-
 ## Connected domain foundation
 
 - Roles are scoped membership records on organizations; users may hold several roles across several organizations. No global `user_type` is introduced.
