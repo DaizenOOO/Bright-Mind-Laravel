@@ -1,0 +1,4 @@
+interface:
+  display_name: "Bright Mind Project Context"
+  short_description: "Load Bright Mind architecture and product context"
+  default_prompt: "Use $bright-mind-project-context to understand the relevant Bright Mind architecture, current state, and project constraints before making changes."

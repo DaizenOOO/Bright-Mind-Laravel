@@ -4,7 +4,7 @@ Bright Mind is a multilingual e-learning platform for young learners, teachers, 
 
 ## Start here
 
-For any Codex task, read `AGENTS.md`, `.ai/rules/index.md`, `CURRENT_STATE.md`, and `NEXT_STEPS.md`, then load only the topic document relevant to the work (`ARCHITECTURE.md`, `I18N.md`, `DATABASE.md`, `UI_SYSTEM.md`, etc.). `CODEX.md` contains the token-efficient workflow and current landing integration prompt.
+For any Codex task, read `AGENTS.md` and `.ai/rules/index.md`, then activate the `bright-mind-project-context` skill from `.agents/skills/`. It routes agents to only the current-state, architecture, localization, database, UI, decision, or roadmap reference required for the task.
 
 ## Current stack
 
@@ -17,7 +17,7 @@ For any Codex task, read `AGENTS.md`, `.ai/rules/index.md`, `CURRENT_STATE.md`, 
 - Pest 5, Larastan, Pint, ESLint, Prettier
 - SQLite for the current local development database
 
-See `ARCHITECTURE.md` for details.
+See `.agents/skills/bright-mind-project-context/references/architecture.md` for details.
 
 ## Design references
 

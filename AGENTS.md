@@ -1,7 +1,7 @@
 <bright-mind-project>
 # Bright Mind Project Context
 
-Before planning or editing files, read `.ai/rules/index.md`, `CURRENT_STATE.md`, `NEXT_STEPS.md`, and only the topic documents relevant to the task. Preserve the Laravel + Inertia + React foundation and working infrastructure.
+Before planning or editing files, read `.ai/rules/index.md` and activate the `bright-mind-project-context` skill from `.agents/skills/`. Load only the project references it routes to for the task. Preserve the Laravel + Inertia + React foundation and working infrastructure.
 
 Build approved features in controlled slices at production quality from their first real implementation. Do not intentionally ship throwaway MVP UI. Own routine senior UX/frontend/accessibility/localization/engineering decisions and proactively solve predictable problems; ask the product owner only for genuine product, policy, educational, legal/privacy, governance, or business-rule choices.
 

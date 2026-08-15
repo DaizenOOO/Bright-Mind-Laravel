@@ -2,21 +2,13 @@
 
 ## Current state
 
-Local development uses SQLite. Current persistence is mostly Laravel infrastructure:
+Local development uses SQLite. Laravel infrastructure covers users, authentication, sessions, passkeys, cache, queues, and migrations.
 
-- users
-- password reset tokens
-- sessions
-- passkeys
-- cache / cache locks
-- jobs / job batches / failed jobs
-- migrations
-
-`User` is currently the only product/domain model.
+The connected Bright Mind foundation also persists organizations and memberships, reusable localized courses/sections/content blocks, media assets, learning pathways, enrolments, block progress, achievements, and an idempotent XP event ledger. Extend these contracts rather than creating parallel feature tables.
 
 ## Modeling guardrails
 
-Before adding Bright Mind domain tables:
+When extending Bright Mind domain tables:
 
 1. Resolve identity, roles, memberships, organizations, schools, and classes as one coherent model.
 2. Resolve the multilingual content/translation strategy before creating course/activity schemas.
@@ -51,4 +43,4 @@ These are planning domains, not approved table names:
 
 ## Production database
 
-No production database change is approved yet. PostgreSQL should be evaluated during architecture planning against the current Laravel setup, multilingual/query requirements, JSON usage, search/reporting expectations, operations, and hosting constraints.
+The production database remains an open deployment decision. Evaluate PostgreSQL against multilingual queries, reporting, search, operations, and hosting constraints before production rollout.

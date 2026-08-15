@@ -1,6 +1,6 @@
 # Current State
 
-Last reviewed: 2026-08-08.
+Last reviewed: 2026-08-15.
 
 ## Implemented foundation
 
@@ -30,6 +30,8 @@ Last reviewed: 2026-08-08.
 A previous static React prototype is preserved read-only at `reference/landing-prototype/`. Eight approved/current landing screenshots are preserved at `reference/visual/landing/`.
 
 The canonical Inertia `welcome` page now directly adapts the approved prototype component tree under `resources/js/landing/`: its desktop/mobile navigation, four mega-menu panels, hero and animated framework stack, partner marquee, interactive learning cycle, dashboard showcase, four animated method sections, focus garden, network carousel, and footer are preserved. Laravel integration is limited to the Inertia page boundary, metadata, application styling compatibility, and Wayfinder-backed login/dashboard actions.
+
+The hero's framework stack is now a configurable inline-SVG component modeled from a Playwright/source-map reverse engineering pass of the current Laravel.com hero. It uses editable cuboid layers, connection paths/nodes, two independently configurable cycling logo lists, deterministic 2-second sequencing, 500ms staggered assembly, 300ms logo/fill transitions, 200ms selector movement, a 2-second alternating float, responsive SVG scaling, keyboard-selectable states and a static reduced-motion mode. Configuration lives in `resources/js/landing/hero-animation.config.ts`; rendering lives in `resources/js/landing/components/landing/HeroStackGraphic.tsx`.
 
 All public mega-menu entries now navigate to allowlisted Inertia pages under `/explore/{page}` rather than landing-page hash targets. The Framework panel contains Framework (Overview, Updates, User Guide), Learning framework (Student Corner, Teacher Toolkit, School Workspace), and the approved five Platform features.
 
